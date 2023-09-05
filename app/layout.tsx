@@ -1,7 +1,8 @@
-import Hero from '@/components/hero'
+import Navbar from '@/components/navbar/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Urbanist, Rubik } from 'next/font/google'
+import UserMenu from '@/components/navbar/UserMenu'
 
 const URBfont = Urbanist({ subsets: ['latin'] })
 const RUBfont = Rubik({ subsets: ['latin'] })
@@ -15,8 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={URBfont.className}>
+        <Navbar />
         {children}
-        <Hero />
+        <UserMenu />
       </body>
     </html>
   )

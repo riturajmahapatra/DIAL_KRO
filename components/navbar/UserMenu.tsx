@@ -9,11 +9,7 @@ import useRegisterModal from '@/app/hooks/useRegisterModal'
 import MenuItem from './MenuItem'
 import Avatar from '@/components/Avatar'
 
-interface UserMenuProps {
-  currentUser?: SafeUser | null
-}
-
-const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
+const UserMenu = () => {
   const router = useRouter()
 
   const loginModal = useLoginModal()
@@ -47,7 +43,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           ">
           <AiOutlineMenu />
           <div className="hidden md:block">
-            <Avatar src={currentUser?.image} />
+            <Avatar />
           </div>
         </div>
       </div>

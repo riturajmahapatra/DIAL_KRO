@@ -12,7 +12,7 @@ import useRegisterModal from '@/app/hooks/useRegisterModal'
 
 import Modal from './Modal'
 import Input from '../inputs/Input'
-import Heading from '../Heading'
+import Heading from '../AuthHeading'
 import Button from '../Button'
 
 const RegisterModal = () => {
@@ -57,7 +57,7 @@ const RegisterModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="Welcome to Jansevaa" subtitle="Create an account!" />
+      <Heading title="Welcome to Dial Kro" subtitle="Create an account!" />
       <Input
         id="email"
         label="Email"

@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <RegisterModal />
         <LoginModal />
+        <Footer />
       </body>
-      <Footer />
     </html>
   )
 }

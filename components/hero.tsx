@@ -5,7 +5,7 @@ const ScrollCarousel = dynamic(() => import('@/components/ScrollCarouselComponen
 
 const Hero: React.FC = () => {
   return (
-    <section className=" flex h-screen items-center text-black">
+    <section className="flex items-center text-black">
       <div className="container mx-auto mt-[20vh] text-center">
         <ScrollCarousel />
         <h1 className="mb-4  text-left text-4xl font-bold">Popular Categories</h1>

@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={URBfont.className}>
         <Navbar />
         {children}
-        <UserMenu />
       </body>
     </html>
   )

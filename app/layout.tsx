@@ -3,6 +3,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Urbanist, Rubik } from 'next/font/google'
 import UserMenu from '@/components/navbar/UserMenu'
+import RegisterModal from '@/components/modals/RegisterModal'
+import LoginModal from '@/components/modals/LoginModal'
 
 const URBfont = Urbanist({ subsets: ['latin'] })
 const RUBfont = Rubik({ subsets: ['latin'] })
@@ -18,6 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={URBfont.className}>
         <Navbar />
         {children}
+        <RegisterModal />
+        <LoginModal />
       </body>
     </html>
   )

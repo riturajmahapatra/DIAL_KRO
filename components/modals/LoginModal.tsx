@@ -95,7 +95,7 @@ const LoginModal = () => {
         className="
       mt-4 text-center font-light text-neutral-500">
         <p>
-          Don't have an account?
+          {`Don't have an account?`}
           <span
             onClick={onToggle}
             className="

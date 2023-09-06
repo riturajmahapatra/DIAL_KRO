@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Cards = () => {
@@ -5,7 +6,13 @@ const Cards = () => {
     <div>
       <div className="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
         <a href="#">
-          <img className="rounded-t-lg" src="https://dummyimage.com/640x360/fff/aaa" alt="lorem" />
+          <Image
+            width={1000}
+            height={1000}
+            className="rounded-t-lg"
+            src="https://dummyimage.com/640x360/fff/aaa"
+            alt="lorem"
+          />
         </a>
         <div className="p-5">
           <a href="#">
